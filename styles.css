@@ -1,0 +1,144 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+:root{
+    font-size: 62.5%;
+    --main: #E5C9C5;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+main,
+.leaderboard {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.leaderboard {
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+    margin: 5em auto 0;
+}
+
+.leaderboard h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.form{
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form input{
+    font-size: 1.6rem;
+    border: 1px solid var(--main);
+    padding: 0.6rem 1rem;
+    outline: none;
+    border-radius: 4px;
+    width: 19%;
+}
+
+.form input:focus{
+    border-color: #e86b58;
+}
+
+.form input[type="submit"]{
+    background: var(--main);
+    color: #fff;
+    width: 13%;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: rgb(179, 173, 173);
+}
+
+.error-msg{
+    text-align: center;
+    color: red;
+    font-weight: 600;
+}
+
+.output{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.person-container{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    background: var(--main);
+    justify-content: flex-start;
+}
+
+.name-date,
+.output-country,
+.output-score{
+    flex-basis: 22%
+}
+
+.name,
+.output-country p{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
+}
+
+.date{
+    font-size: 1.4rem;
+    color: grey;
+    text-transform: uppercase;
+    margin-top:0.2em
+}
+
+.icons{
+    display: flex;
+    gap: 1.7rem;
+}
+
+.trash,
+.add,
+.minus{
+    background: #fff;
+    cursor: pointer;
+    width: 5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trash-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.trash:hover,
+.add:hover,
+.minus:hover{
+    background: rgb(225, 219, 219);
+}
+
+h1 span{
+    margin: 5rem;
+}
